@@ -17,7 +17,9 @@
         </Grid.RowDefinitions>
         <DockPanel Grid.Row="0" Grid.Column="0"  HorizontalAlignment="Stretch" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
             <Label  Content="说明"  HorizontalAlignment="Left"  Margin="1,0,0,0"/>
-            <TextBox   HorizontalContentAlignment="Left"  Background="{DynamicResource {x:Static SystemColors.InfoBrushKey}}"   HorizontalAlignment="Stretch" TextAlignment="Center"/>
+            <TextBox  Name="txt1"  HorizontalContentAlignment="Left"  Background="{DynamicResource {x:Static SystemColors.InfoBrushKey}}"   HorizontalAlignment="Stretch" TextAlignment="Center"/>
         </DockPanel>
+        <Button Content="孙悟空" HorizontalAlignment="Right" Margin="0,0,38.681,122.823" Grid.Row="1" VerticalAlignment="Bottom" Width="75" Click="Button_Click"/>
+        <Button Content="二郎神" Grid.Column="1" Margin="65.453,0,82.22,81.942" Grid.Row="1" Click="Button_Click_1" VerticalAlignment="Bottom" Height="55.067"/>
     </Grid>
 </Window>

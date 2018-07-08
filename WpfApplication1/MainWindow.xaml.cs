@@ -24,5 +24,18 @@ namespace WpfApplication1
         {
             InitializeComponent();
         }
+
+        Protocal current;
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            current = new Sun().Clone();
+            this.txt1.Text= current.Fight();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            current = new Erlang().Clone();
+            this.txt1.Text = current.Fight();
+        }
     }
 }

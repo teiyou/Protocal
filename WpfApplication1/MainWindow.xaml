@@ -7,6 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0" Grid.Column="0"  HorizontalAlignment="Stretch" Background="{DynamicResource {x:Static SystemColors.ActiveCaptionBrushKey}}">
+            <Label  Content="说明"  HorizontalAlignment="Left"  Margin="1,0,0,0"/>
+            <TextBox   HorizontalContentAlignment="Left"  Background="{DynamicResource {x:Static SystemColors.InfoBrushKey}}"   HorizontalAlignment="Stretch" TextAlignment="Center"/>
+        </DockPanel>
     </Grid>
 </Window>
